@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <form>
+                    <div>
+                        <input id="input-btn" type="text" name="display">
+                    </div>
+                     <div>
+                        <input id="clear-btn" type="button" value="AC">
+                        <input id="clear" type="button" value="C">
+                        <input onclick="calculate('.')" type="button" value=".">
+                        <input onclick="calculate('/')" type="button" value="/">
+                    </div>
+                    <div>
+                        <input onclick="calculate(7)" type="button" value="7">
+                        <input onclick="calculate(8)" type="button" value="8">
+                        <input onclick="calculate(9)" type="button" value="9">
+                        <input onclick="calculate('*')" type="button" value="*">
+                    </div>
+                    <div>
+                        <input onclick="calculate(4)" type="button" value="4">
+                        <input onclick="calculate(5)" type="button" value="5">
+                        <input onclick="calculate(6)" type="button" value="6">
+                        <input onclick="calculate('-')" type="button" value="-">
+                    </div>
+                    <div>
+                        <input onclick="calculate(1)" type="button" value="1">
+                        <input onclick="calculate(2)" type="button" value="2">
+                        <input onclick="calculate(3)" type="button" value="3">
+                        <input onclick="calculate('+')" type="button" value="+">
+                    </div>
+                    <div>
+                        <input onclick="calculate('00')" type="button" value="00">
+                        <input onclick="calculate(0)" type="button" value="0">
+                        <input id="equalbtn" type="button" value="=" id="dubole-width">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
